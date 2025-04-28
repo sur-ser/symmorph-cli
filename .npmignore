@@ -1,0 +1,10 @@
+src/
+node_modules/
+tsup.config.ts
+tsconfig.json
+package-lock.json
+README.md
+*.log
+*.ts
+*.map
+*.DS_Store

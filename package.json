@@ -1,0 +1,46 @@
+{
+  "name": "symmorph-cli",
+  "version": "1.0.0",
+  "description": "Command-line interface (CLI) for SymmetricMorph encryption library",
+  "bin": {
+    "symmorph": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "types": "dist/cli.d.ts",
+  "scripts": {
+    "build": "tsup src/cli.ts --format esm,cjs --dts",
+    "dev": "ts-node src/cli.ts",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "symmetricmorph": "^1.0.2",
+    "yargs": "^17.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.0.0",
+    "tsup": "^7.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "encryption",
+    "cli",
+    "symmetricmorph",
+    "security",
+    "cipher",
+    "cryptography",
+    "file-encryption"
+  ],
+  "author": "Suren Krmoian",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sur-ser/symmorph-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sur-ser/symmorph-cli/issues"
+  },
+  "homepage": "https://github.com/sur-ser/symmorph-cli#readme",
+  "engines": {
+    "node": ">=16"
+  }
+}
